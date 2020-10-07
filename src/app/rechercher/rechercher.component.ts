@@ -15,7 +15,7 @@ export class RechercherComponent implements OnInit{
     public year : number;
     public type : string = '';
     public films = [];
-    constructor(private alertCtrl : AlertController, private rechercherFilm : FilmsProvider) {
+    constructor(private alertCtrl : AlertController, private rechercherFilms : FilmsProvider) {
 
     }
 
@@ -51,7 +51,7 @@ export class RechercherComponent implements OnInit{
     }//fin fonction rechercher
 
     private lancerRecherche(){
-       this.rechercherFilm.search(this.title, this.year, this.type)
+       this.rechercherFilms.search(this.title, this.year, this.type)
        .then((resultat)=> {
            this.films = resultat;
        })

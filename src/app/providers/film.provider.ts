@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Film } from '../models/film';
-
 @Injectable()
 export class FilmsProvider{
     public search(title: string, year : number, type: string):
@@ -21,7 +20,7 @@ export class FilmsProvider{
                     Title : 'gdhdftsssssfffjf',
                     Poster : 'assets/icon/favicon.png',
                     Year:2019
-                }
+                },
             ]);
 
         });
