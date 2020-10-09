@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { resolve } from 'dns';
+
 import { FilmsProvider } from '../providers/film.provider';
 
 @Component({
